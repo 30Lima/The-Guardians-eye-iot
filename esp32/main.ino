@@ -30,5 +30,13 @@ void loop(){
 
     int airQuality = analogRead(AIR_QUALITY_PIN);
 
+    Serial.print("Temperatura: ");
+    Serial.print(temperature);
+    Serial.print(" °C, Umidade: ");
+    Serial.print(humidity);
+    Serial.print(" %, Umidade do Solo: ");
+    Serial.print(soilPercent);
+    Serial.print(" %, Qualidade do Ar (valor bruto): ");
+    Serial.println(airQuality);
 }
 
