@@ -20,3 +20,12 @@ void setup() {
 while (Serial2.available() > 0) {
   gps.encode(Serial2.read());
 }
+
+float temperature = dht.readTemperature();
+float humidity = dht.readHumidity();
+
+int soilRaw = analogRead(SOIL_PIN);
+float soilPercent = map(soilRaw, 0, 4095, 0, 100);
+
+int airQuality = analogRead(AIR_QUALITY_PIN);
+
