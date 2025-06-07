@@ -51,5 +51,21 @@ void loop(){
     urlImagem = "https://exemplo.com/poluicao.jpg";
     }
 
+    // Dados do GPS
+    if (gps.location.isValid()) {
+        Serial.print("Latitude: ");
+        Serial.print(gps.location.lat(), 6);
+        Serial.print(", Longitude: ");
+        Serial.println(gps.location.lng(), 6);
+    } else {
+        Serial.println("GPS: Sem sinal válido");
+    }
+
+    if (urlImagem != "") {
+        digitalWrite(LED_PIN, HIGH);
+        Serial.println(urlImagem); // Apenas a URL
+    } else {
+        digitalWrite(LED_PIN, LOW);
+    }
 }
 
