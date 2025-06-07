@@ -67,5 +67,8 @@ void loop(){
     } else {
         digitalWrite(LED_PIN, LOW);
     }
+
+    Serial.println("----");
+    delay(2000);
 }
 
