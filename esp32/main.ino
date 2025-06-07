@@ -16,3 +16,7 @@ void setup() {
   dht.begin();
   pinMode(LED_PIN, OUTPUT);
 }
+
+while (Serial2.available() > 0) {
+  gps.encode(Serial2.read());
+}
