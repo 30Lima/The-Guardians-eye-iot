@@ -38,5 +38,18 @@ void loop(){
     Serial.print(soilPercent);
     Serial.print(" %, Qualidade do Ar (valor bruto): ");
     Serial.println(airQuality);
+
+    String urlImagem = "";
+
+    if (temperature > 35) {
+    urlImagem = "https://exemplo.com/incendio.jpg";
+    } else if (soilPercent < 30) {
+    urlImagem = "https://exemplo.com/seca.jpg";
+    } else if (soilPercent > 80) {
+    urlImagem = "https://exemplo.com/enchente.jpg";
+    } else if (airQuality > 2500) {
+    urlImagem = "https://exemplo.com/poluicao.jpg";
+    }
+
 }
 
