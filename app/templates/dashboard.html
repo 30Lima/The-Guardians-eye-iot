@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard IoT - ESP32</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="{{ url_for('static', filename='../static/javascript/script.js') }}"></script>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Dashboard IoT - ESP32</h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><i class="bx bx-home"></i> Início</li>
+
+                <li>
+                    <a href="/graph">
+                        <i class="bx bx-bar-chart"></i> Gráfico
+                    </a>
+                </li>
+                <li><i class="bx bx-history"></i> Histórico</li>
+                <li><i class="bx bx-info-circle"></i> Sobre</li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div class="cards">
+                <div class="card" id="card-temp">Temperatura: -- °C</div>
+                <div class="card" id="card-umid">Umidade: -- %</div>
+                <div class="card" id="card-time">Horário: --</div>
+            </div>
+
+            <h3>ÚLTIMOS REGISTROS</h3>
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Temperatura (°C)</th>
+                        <th>Umidade (%)</th>
+                        <th>Solo (%)</th>
+                        <th>Qualidade do Ar</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                        <th>Imagem</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Conteúdo preenchido via JS -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+Intalação do chocolatey:
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+Saia do terminal, abra dnv e execute: choco --version
+
+pip install paho-mqtt requests
+npm install -g node-red
+flask
+paho-mqtt
+
+
