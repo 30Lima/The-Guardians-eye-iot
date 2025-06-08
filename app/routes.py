@@ -41,3 +41,17 @@ def graph_data():
 @bp.route("/graph")
 def graph():
     return render_template("graph.html")
+
+@bp.route('/history')
+def history():
+    return render_template('history.html')
+
+@bp.route('/history-data')
+def history_data():
+    try:
+        with open('data/log.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        return jsonify({'data': data})
+    except Exception as e:
+        return jsonify({'error': str(e)})
+    
