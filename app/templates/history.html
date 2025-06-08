@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Histórico de Registros</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Dashboard IoT - ESP32</h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="/"><i class="bx bx-home"></i> Início</a></li>
+                <li><a href="/graph"><i class="bx bx-bar-chart"></i> Gráfico</a></li>
+                <li><a href="/history"><i class="bx bx-history"></i> Histórico</a></li>
+
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h3>HISTÓRICOS DE REGISTROS</h3>
+
+            <div class="filters" style="margin-bottom: 1rem;">
+                <label for="startDate">Início:</label>
+                <input type="date" id="startDate">
+
+                <label for="endDate">Fim:</label>
+                <input type="date" id="endDate">
+
+                <button onclick="applyFilters()">Filtrar</button>
+                <button onclick="exportToCSV()">Exportar CSV</button>
+            </div>
+
+            <table id="historyTable">
+                <thead>
+                    <tr>
+                        <th>Data/Hora</th>
+                        <th>Temperatura (°C)</th>
+                        <th>Umidade (%)</th>
+                        <th>Solo (%)</th>
+                        <th>Qualidade do Ar</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                        <th>Imagem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Conteúdo preenchido via JavaScript -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='javascript/history.js') }}"></script>
+
+</body>
+
+</html>
