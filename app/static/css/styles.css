@@ -23,6 +23,25 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.sidebar ul li a {
+  text-decoration: none;  /* tira o sublinhado */
+  color: #f1f1f1;            /* cor padrão dos links */
+  display: flex;          /* pra alinhar o ícone e o texto na mesma linha */
+  align-items: center;
+  gap: 8px;               /* espaçamento entre ícone e texto */
+}
+
+/* Ao passar o mouse por cima (hover) */
+.sidebar ul li a:hover {
+  text-decoration: none;  /* se quiser, ou none para não ter nada */
+  color: #007BFF;               /* cor ao passar o mouse */
+}
+
+/* Se quiser remover o foco (aquela linha azul quando clica/tab) */
+.sidebar ul li a:focus {
+  outline: none;
+  text-decoration: none;
+}
 
 .container {
   display: flex;
