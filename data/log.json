@@ -1,0 +1,212 @@
+[
+  {
+    "temperature": null,
+    "humidity": null,
+    "soil": null,
+    "air_quality": null,
+    "latitude": "",
+    "longitude": "",
+    "url": "",
+    "timestamp": ""
+  },
+  {
+    "temperature": 17.9,
+    "humidity": 73,
+    "soil": 0,
+    "air_quality": 3117,
+    "latitude": "-23.466283",
+    "longitude": "-51.840100",
+    "url": "https://exemplo.com/seca.jpg",
+    "timestamp": "2025-06-08T09:10:22.461Z"
+  },
+  {
+    "temperature": 17.9,
+    "humidity": 73,
+    "soil": 12,
+    "air_quality": 2576,
+    "latitude": "-23.466217",
+    "longitude": "-51.840067",
+    "url": "https://exemplo.com/seca.jpg",
+    "timestamp": "2025-06-08T09:10:40.361Z"
+  },
+  {
+    "temperature": 17.9,
+    "humidity": 73,
+    "soil": 12,
+    "air_quality": 2507,
+    "latitude": "-23.466217",
+    "longitude": "-51.840067",
+    "url": "https://exemplo.com/seca.jpg",
+    "timestamp": "2025-06-08T09:10:40.444Z"
+  },
+  {
+    "temperature": 42.3,
+    "humidity": 35,
+    "soil": 76,
+    "air_quality": 2256,
+    "latitude": "-23.466083",
+    "longitude": "-51.840017",
+    "url": "https://exemplo.com/incendio.jpg",
+    "timestamp": "2025-06-08T09:12:41.633Z"
+  },
+  {
+    "temperature": 20.3,
+    "humidity": 57.5,
+    "soil": 1,
+    "air_quality": 1976,
+    "latitude": "-23.465967",
+    "longitude": "-51.840050",
+    "url": "https://exemplo.com/seca.jpg",
+    "timestamp": "2025-06-08T09:12:55.785Z"
+  },
+  {
+    "temperature": 20.3,
+    "humidity": 57.5,
+    "soil": 73,
+    "air_quality": 786,
+    "latitude": "-23.466367",
+    "longitude": "-51.840150",
+    "url": "",
+    "timestamp": "2025-06-08T09:15:45.292Z"
+  },
+  {
+    "temperature": 20.3,
+    "humidity": 57.5,
+    "soil": 73,
+    "air_quality": 1719,
+    "latitude": "-23.466367",
+    "longitude": "-51.840150",
+    "url": "",
+    "timestamp": "2025-06-08T09:15:45.539Z"
+  },
+  {
+    "temperature": 20.3,
+    "humidity": 57.5,
+    "soil": 73,
+    "air_quality": 1698,
+    "latitude": "-23.466367",
+    "longitude": "-51.840150",
+    "url": "",
+    "timestamp": "2025-06-08T09:15:45.769Z"
+  },
+  {
+    "temperature": 20.3,
+    "humidity": 57.5,
+    "soil": 73,
+    "air_quality": 2156,
+    "latitude": "-23.466250",
+    "longitude": "-51.840083",
+    "url": "",
+    "timestamp": "2025-06-08T09:15:47.412Z"
+  },
+  {
+    "temperature": 20.3,
+    "humidity": 57.5,
+    "soil": 73,
+    "air_quality": 1920,
+    "latitude": "-23.466250",
+    "longitude": "-51.840083",
+    "url": "",
+    "timestamp": "2025-06-08T09:15:47.643Z"
+  },
+  {
+    "temperature": 20.3,
+    "humidity": 57.5,
+    "soil": 73,
+    "air_quality": 2089,
+    "latitude": "-23.466250",
+    "longitude": "-51.840083",
+    "url": "",
+    "timestamp": "2025-06-08T09:15:47.878Z"
+  },
+  {
+    "temperature": 20.3,
+    "humidity": 57.5,
+    "soil": 73,
+    "air_quality": 2169,
+    "latitude": "-23.466250",
+    "longitude": "-51.840083",
+    "url": "",
+    "timestamp": "2025-06-08T09:15:48.190Z"
+  },
+  {
+    "temperature": 20.3,
+    "humidity": 57.5,
+    "soil": 73,
+    "air_quality": 2248,
+    "latitude": "-23.466250",
+    "longitude": "-51.840083",
+    "url": "",
+    "timestamp": "2025-06-08T09:15:48.435Z"
+  },
+  {
+    "temperature": 20.3,
+    "humidity": 57.5,
+    "soil": 73,
+    "air_quality": 2177,
+    "latitude": "-23.466250",
+    "longitude": "-51.840083",
+    "url": "",
+    "timestamp": "2025-06-08T09:15:48.691Z"
+  },
+  {
+    "temperature": 20.3,
+    "humidity": 57.5,
+    "soil": 73,
+    "air_quality": 2064,
+    "latitude": "-23.466217",
+    "longitude": "-51.840067",
+    "url": "",
+    "timestamp": "2025-06-08T09:15:50.175Z"
+  },
+  {
+    "temperature": 20.3,
+    "humidity": 57.5,
+    "soil": 73,
+    "air_quality": 2216,
+    "latitude": "-23.466217",
+    "longitude": "-51.840067",
+    "url": "",
+    "timestamp": "2025-06-08T09:15:50.438Z"
+  },
+  {
+    "temperature": 20.3,
+    "humidity": 57.5,
+    "soil": 73,
+    "air_quality": 2496,
+    "latitude": "-23.466133",
+    "longitude": "-51.840033",
+    "url": "",
+    "timestamp": "2025-06-08T09:16:34.961Z"
+  },
+  {
+    "temperature": 20.3,
+    "humidity": 57.5,
+    "soil": 73,
+    "air_quality": 1734,
+    "latitude": "-23.466133",
+    "longitude": "-51.840033",
+    "url": "",
+    "timestamp": "2025-06-08T09:16:35.206Z"
+  },
+  {
+    "temperature": 20.3,
+    "humidity": 57.5,
+    "soil": 73,
+    "air_quality": 2848,
+    "latitude": "-23.465950",
+    "longitude": "-51.840100",
+    "url": "https://exemplo.com/poluicao.jpg",
+    "timestamp": "2025-06-08T09:16:39.688Z"
+  },
+  {
+    "temperature": 20.3,
+    "humidity": 57.5,
+    "soil": 73,
+    "air_quality": 2803,
+    "latitude": "-23.465983",
+    "longitude": "-51.840117",
+    "url": "https://exemplo.com/poluicao.jpg",
+    "timestamp": "2025-06-08T09:16:49.033Z"
+  }
+]
