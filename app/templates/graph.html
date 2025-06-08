@@ -1,41 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8" />
-    <title>Gráfico Paginado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gráfico - Dashboard IoT</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="../static/javascript/graph.js"></script>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 2rem;
-            background: #f4f6f8;
-        }
-
-        button {
-            margin: 0.5rem;
-            padding: 0.5rem 1rem;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-
-        #pageNum {
-            font-weight: bold;
-        }
-    </style>
 </head>
 
 <body>
-    <h2>Gráfico de Temperatura</h2>
-    <canvas id="myChart" width="600" height="300"></canvas>
-    <div>
-        <button id="prevPage">Anterior</button>
-        <button id="nextPage">Próxima</button>
-        <span>Página: <span id="pageNum">1</span></span>
+    <header>
+        <h1>Dashboard IoT - ESP32</h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li>
+                    <a href="/">
+                        <i class="bx bx-home"></i> Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/graph">
+                        <i class="bx bx-bar-chart"></i> Gráfico
+                    </a>
+                </li>
+                <li>
+                    <a href="/history">
+                        <i class="bx bx-history"></i> Histórico
+                    </a>
+                </li>
+
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h2>Gráfico de Temperatura</h2>
+            <canvas id="tempChart" width="600" height="300"></canvas>
+
+            <h2>Gráfico de Umidade</h2>
+            <canvas id="humidityChart" width="600" height="300"></canvas>
+
+            <h2>Gráfico de Umidade do Solo</h2>
+            <canvas id="soilChart" width="600" height="300"></canvas>
+
+            <h2>Gráfico de Qualidade do Ar</h2>
+            <canvas id="airChart" width="600" height="300"></canvas>
+
+
+            <div>
+                <button id="prevPage">Anterior</button>
+                <button id="nextPage">Próxima</button>
+                <span>Página: <span id="pageNum">1</span></span>
+            </div>
+        </main>
+
     </div>
 
+
+    <script src="{{ url_for('static', filename='javascript/graph.js') }}"></script>
 </body>
 
 </html>
