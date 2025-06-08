@@ -1,0 +1,134 @@
+[
+    {
+        "id": "709327b0ddbbad51",
+        "type": "tab",
+        "label": "Fluxo 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c037041bd6fe0966",
+        "type": "mqtt in",
+        "z": "709327b0ddbbad51",
+        "name": "Dados do ESP32",
+        "topic": "esp32/dados",
+        "qos": "1",
+        "datatype": "json",
+        "broker": "b730f2dc12d9e730",
+        "nl": false,
+        "rap": false,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 260,
+        "wires": [
+            [
+                "c23c408168648df6"
+            ]
+        ]
+    },
+    {
+        "id": "c23c408168648df6",
+        "type": "function",
+        "z": "709327b0ddbbad51",
+        "name": "Adicionar timestamp",
+        "func": "msg.payload.timestamp = new Date().toISOString();\nmsg.newData = msg.payload;\nmsg.filename = \"C:\\\\Users\\\\pedro\\\\The-Guardians-eye-iot\\\\data\\\\log.json\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 260,
+        "wires": [
+            [
+                "0b1c17b3a98c6bb3"
+            ]
+        ]
+    },
+    {
+        "id": "0b1c17b3a98c6bb3",
+        "type": "file in",
+        "z": "709327b0ddbbad51",
+        "name": "Ler log.json",
+        "filename": "C:\\\\Users\\\\pedro\\\\The-Guardians-eye-iot\\\\data\\\\log.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "sendError": true,
+        "encoding": "none",
+        "allProps": false,
+        "x": 600,
+        "y": 260,
+        "wires": [
+            [
+                "709b4f3ab168d16d"
+            ]
+        ]
+    },
+    {
+        "id": "709b4f3ab168d16d",
+        "type": "function",
+        "z": "709327b0ddbbad51",
+        "name": "Adicionar ao array",
+        "func": "let filename = msg.filename;\nlet newData = msg.newData;\nlet existing = [];\n\ntry {\n    existing = JSON.parse(msg.payload || '[]');\n} catch (e) {\n    existing = [];\n}\n\nif (!Array.isArray(existing)) {\n    existing = [];\n}\n\nexisting.push(newData);\nmsg.payload = JSON.stringify(existing, null, 2);\nmsg.filename = filename;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 260,
+        "wires": [
+            [
+                "f23a7646e1d007b9"
+            ]
+        ]
+    },
+    {
+        "id": "f23a7646e1d007b9",
+        "type": "file",
+        "z": "709327b0ddbbad51",
+        "name": "Salvar log.json",
+        "filename": "C:\\\\Users\\\\pedro\\\\The-Guardians-eye-iot\\\\data\\\\log.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 1070,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b730f2dc12d9e730",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
