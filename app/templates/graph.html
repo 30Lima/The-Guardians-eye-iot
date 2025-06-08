@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Gráfico Paginado</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../static/javascript/graph.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            background: #f4f6f8;
+        }
+
+        button {
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        #pageNum {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Gráfico de Temperatura</h2>
+    <canvas id="myChart" width="600" height="300"></canvas>
+    <div>
+        <button id="prevPage">Anterior</button>
+        <button id="nextPage">Próxima</button>
+        <span>Página: <span id="pageNum">1</span></span>
+    </div>
+
+</body>
+
+</html>
