@@ -2,33 +2,59 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Dashboard IoT</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard ESP32</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="../static/styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Dashboard IoT</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Imagem</th>
-                <th>Latitude</th>
-                <th>Longitude</th>
-                <th>Timestamp</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for item in data %}
-            <tr>
-                <td><a href="{{ item.url }}" target="_blank">{{ item.url }}</a></td>
-                <td>{{ item.latitude }}</td>
-                <td>{{ item.longitude }}</td>
-                <td>{{ item.timestamp }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+
+    <header>
+        <h1>Dashboard IoT - ESP32</h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><i class="bx bx-home"></i> Início</li>
+                <li><i class="bx bx-bar-chart"></i> Gráfico</li>
+                <li><i class="bx bx-history"></i> Histórico</li>
+                <li><i class="bx bx-info-circle"></i> Sobre</li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div class="cards">
+                <div class="card" id="card-temp">Temperatura: -- °C</div>
+                <div class="card" id="card-umid">Umidade: -- %</div>
+                <div class="card" id="card-time">Horário: --</div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        async function fetchData() {
+            try {
+                const response = await fetch('/data');
+                const data = await response.json();
+
+                if (Array.isArray(data) && data.length > 0) {
+                    const last = data[data.length - 1];
+                    document.getElementById("card-temp").innerText = `Temperatura: ${last.temperatura} °C`;
+                    document.getElementById("card-umid").innerText = `Umidade: ${last.umidade} %`;
+                    document.getElementById("card-time").innerText = `Horário: ${new Date(last.timestamp).toLocaleString()}`;
+                }
+            } catch (err) {
+                console.error("Erro ao carregar dados:", err);
+            }
+        }
+
+        fetchData();
+        setInterval(fetchData, 5000); // Atualiza a cada 5 segundos
+    </script>
 </body>
 
 </html>
