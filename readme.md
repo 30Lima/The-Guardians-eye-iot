@@ -4,7 +4,7 @@ Este projeto tem como objetivo o **monitoramento de variáveis ambientais** (tem
 
 ---
 
-## 📸 Ilustração da Solução
+## 📸 Ilustração do circuito
 
 ![fluxo-geral](esp32/circuit.png)  
 *Exemplo de fluxo: ESP32 → Node-RED → API Flask → Armazenamento + Interface Web*
