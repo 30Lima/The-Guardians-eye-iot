@@ -92,7 +92,7 @@ https://wokwi.com/projects/433090140394028033
 run.py
 ```
 
-### 8. Acesse o localhost(foi exibido no seu terminal) e veja o sistema funcioando
+### 8. Acesse o localhost(foi exibido no seu terminal) e veja o sistema funcionando
 
 
 
