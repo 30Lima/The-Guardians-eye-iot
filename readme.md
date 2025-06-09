@@ -72,10 +72,14 @@ pip install paho-mqtt
 pip install requests
 npm install -g node-red
 ```
+
 ### 3. Rode o node-RED
 ```bash
 node-red
 ```
+> Lembre-se de sempre executar os arquivos em terminais diferentes.
+
+![image](https://github.com/user-attachments/assets/526ad8fe-3f30-4c9e-b96b-c7de611b64cb)
 
 ### 4. Ainda no node-RED, importe o arquivo JSON 
 ![clique aqui](nodered.json)
@@ -94,36 +98,16 @@ run.py
 
 ### 8. Acesse o localhost(foi exibido no seu terminal) e veja o sistema funcionando
 
+### Imagens do sistema:
+> DashBoard de Logs do ESP32
 
+![image](https://github.com/user-attachments/assets/00ce156c-0178-4ca2-bbd8-7b499cc14e9b)
 
+> Gráficos do sistema
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/695d70f8-1c1f-4791-890d-26ea812184e0)
+![image](https://github.com/user-attachments/assets/7fe4ad19-4adf-43f9-9e8b-423180baf020)
+![image](https://github.com/user-attachments/assets/1cd28be1-e856-4fb0-b415-9745ed539547)
+![image](https://github.com/user-attachments/assets/b313c7df-6f1c-4d37-8212-597e17d3a218)
 
 
