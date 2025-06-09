@@ -55,6 +55,8 @@ O fluxo criado no Node-RED realiza o processo de **recebimento, tratamento e arm
 
 [ESP32] → MQTT (HiveMQ) → Node-RED → Adiciona timestamp → Lê log.json → Atualiza array JSON → Salva no arquivo
 
+---
+
 ### 🔁 Etapas do fluxo
 
 MQTT IN (esp32/dados)
@@ -80,6 +82,7 @@ Salvar no arquivo log.json
 ├─ Nó: file
 └─ Descrição: Salva o novo conteúdo no arquivo log.json, sobrescrevendo com o array atualizado.
 
+---
 
 ### 🌐 Configuração do Broker MQTT
 
@@ -89,6 +92,7 @@ Porta:         1883
 Tópico:        esp32/dados
 Protocolo:     MQTT v3.1.1
 
+---
 
 ### 🗂 Arquivo gerado
 
