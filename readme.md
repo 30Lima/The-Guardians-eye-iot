@@ -49,6 +49,55 @@ Este projeto tem como objetivo o **monitoramento de variáveis ambientais** (tem
 └── run.py                         # Arquivo principal de execução do sistema
 ```
 
+## 📡 Fluxo Node-RED - Recebimento e Armazenamento de Dados
+
+O fluxo criado no Node-RED realiza o processo de **recebimento, tratamento e armazenamento de dados** enviados pelo ESP32 via MQTT. Abaixo está a descrição detalhada de cada etapa do fluxo:
+
+[ESP32] → MQTT (HiveMQ) → Node-RED → Adiciona timestamp → Lê log.json → Atualiza array JSON → Salva no arquivo
+
+### 🔁 Etapas do fluxo
+
+MQTT IN (esp32/dados)
+├─ Nó: mqtt in
+├─ Descrição: Escuta a topic esp32/dados no broker HiveMQ. Recebe dados no formato JSON enviados pelo ESP32.
+└─ QoS: 1
+
+Adicionar timestamp
+├─ Nó: function
+├─ Descrição: Adiciona o campo timestamp ao payload no formato ISO (ex: 2025-06-09T14:30:00.000Z).
+└─ Define também o caminho do arquivo: data/log.json
+
+Leitura do arquivo log.json
+├─ Nó: file in
+└─ Descrição: Lê o conteúdo atual do arquivo log.json para obter os logs armazenados anteriormente.
+
+Adicionar ao array existente
+├─ Nó: function
+├─ Descrição: Converte o conteúdo lido em array. Caso esteja vazio ou inválido, inicializa como array vazio.
+└─ Adiciona o novo dado com timestamp ao final do array.
+
+Salvar no arquivo log.json
+├─ Nó: file
+└─ Descrição: Salva o novo conteúdo no arquivo log.json, sobrescrevendo com o array atualizado.
+
+
+### 🌐 Configuração do Broker MQTT
+
+Broker:        HiveMQ (broker público)
+Endereço:      broker.hivemq.com
+Porta:         1883
+Tópico:        esp32/dados
+Protocolo:     MQTT v3.1.1
+
+
+### 🗂 Arquivo gerado
+
+Caminho:    data/log.json  
+Formato:    JSON  
+Conteúdo:   Array de objetos contendo os dados do ESP32 com timestamps  
+
+> 💡 Este fluxo permite armazenar com segurança e em tempo real os dados recebidos do ESP32, garantindo que possam ser utilizados posteriormente pela API Flask e exibidos na interface web.
+
 ---
 
 ## 🚀 Como Executar o Projeto
