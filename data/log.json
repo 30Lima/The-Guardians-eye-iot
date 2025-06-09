@@ -10,183 +10,93 @@
     "timestamp": ""
   },
   {
-    "temperature": -7.1,
-    "humidity": 61,
-    "soil": 29,
-    "air_quality": 1996,
-    "latitude": "-23.466167",
-    "longitude": "-51.840050",
-    "url": "https://exemplo.com/seca.jpg",
-    "timestamp": "2025-06-08T21:19:41.653Z"
+    "temperature": 16.3,
+    "humidity": 74.5,
+    "soil": 41,
+    "air_quality": 2016,
+    "latitude": "-23.466283",
+    "longitude": "-51.840100",
+    "url": "https://exemplo.com/estavel.jpg",
+    "timestamp": "2025-06-08T22:16:26.685Z"
   },
   {
-    "temperature": -7.1,
-    "humidity": 61,
-    "soil": 29,
-    "air_quality": 2032,
+    "temperature": 16.3,
+    "humidity": 74.5,
+    "soil": 96,
+    "air_quality": 2097,
+    "latitude": "-23.466250",
+    "longitude": "-51.840083",
+    "url": "https://exemplo.com/enchente.jpg",
+    "timestamp": "2025-06-08T22:16:28.475Z"
+  },
+  {
+    "temperature": 16.3,
+    "humidity": 74.5,
+    "soil": 96,
+    "air_quality": 2272,
+    "latitude": "-23.466250",
+    "longitude": "-51.840083",
+    "url": "https://exemplo.com/enchente.jpg",
+    "timestamp": "2025-06-08T22:16:28.720Z"
+  },
+  {
+    "temperature": 16.3,
+    "humidity": 74.5,
+    "soil": 65,
+    "air_quality": 1940,
+    "latitude": "-23.466250",
+    "longitude": "-51.840083",
+    "url": "https://exemplo.com/estavel.jpg",
+    "timestamp": "2025-06-08T22:16:28.952Z"
+  },
+  {
+    "temperature": 16.3,
+    "humidity": 74.5,
+    "soil": 37,
+    "air_quality": 1986,
+    "latitude": "-23.466250",
+    "longitude": "-51.840083",
+    "url": "https://exemplo.com/estavel.jpg",
+    "timestamp": "2025-06-08T22:16:29.222Z"
+  },
+  {
+    "temperature": 16.3,
+    "humidity": 74.5,
+    "soil": 36,
+    "air_quality": 2115,
+    "latitude": "-23.466250",
+    "longitude": "-51.840083",
+    "url": "https://exemplo.com/estavel.jpg",
+    "timestamp": "2025-06-08T22:16:29.447Z"
+  },
+  {
+    "temperature": 16.3,
+    "humidity": 74.5,
+    "soil": 36,
+    "air_quality": 2405,
+    "latitude": "-23.466250",
+    "longitude": "-51.840083",
+    "url": "https://exemplo.com/estavel.jpg",
+    "timestamp": "2025-06-08T22:16:29.675Z"
+  },
+  {
+    "temperature": 6.5,
+    "humidity": 30.5,
+    "soil": 25,
+    "air_quality": 1936,
     "latitude": "-23.466133",
     "longitude": "-51.840033",
     "url": "https://exemplo.com/seca.jpg",
-    "timestamp": "2025-06-08T21:19:44.929Z"
+    "timestamp": "2025-06-08T22:16:46.916Z"
   },
   {
-    "temperature": 50.6,
-    "humidity": 47,
-    "soil": 89,
-    "air_quality": 1859,
+    "temperature": 23.6,
+    "humidity": 53,
+    "soil": 25,
+    "air_quality": 1823,
     "latitude": "-23.466050",
     "longitude": "-51.839983",
-    "url": "https://exemplo.com/incendio.jpg",
-    "timestamp": "2025-06-08T21:20:13.413Z"
-  },
-  {
-    "temperature": 53.9,
-    "humidity": 81.5,
-    "soil": 6,
-    "air_quality": 2152,
-    "latitude": "-23.465983",
-    "longitude": "-51.840017",
-    "url": "https://exemplo.com/incendio.jpg",
-    "timestamp": "2025-06-08T21:20:29.291Z"
-  },
-  {
-    "temperature": 27.8,
-    "humidity": 39.5,
-    "soil": 74,
-    "air_quality": 2010,
-    "latitude": "-23.465983",
-    "longitude": "-51.840117",
-    "url": "",
-    "timestamp": "2025-06-08T21:20:48.555Z"
-  },
-  {
-    "temperature": 5.9,
-    "humidity": 53.5,
-    "soil": 74,
-    "air_quality": 1962,
-    "latitude": "-23.466033",
-    "longitude": "-51.840133",
-    "url": "",
-    "timestamp": "2025-06-08T21:20:53.942Z"
-  },
-  {
-    "temperature": 5.9,
-    "humidity": 40.5,
-    "soil": 74,
-    "air_quality": 1376,
-    "latitude": "-23.466150",
-    "longitude": "-51.840200",
-    "url": "",
-    "timestamp": "2025-06-08T21:21:10.533Z"
-  },
-  {
-    "temperature": 5.9,
-    "humidity": 40.5,
-    "soil": 74,
-    "air_quality": 1599,
-    "latitude": "-23.466150",
-    "longitude": "-51.840200",
-    "url": "",
-    "timestamp": "2025-06-08T21:21:10.795Z"
-  },
-  {
-    "temperature": 5.9,
-    "humidity": 40.5,
-    "soil": 74,
-    "air_quality": 1975,
-    "latitude": "-23.466150",
-    "longitude": "-51.840200",
-    "url": "",
-    "timestamp": "2025-06-08T21:21:11.145Z"
-  },
-  {
-    "temperature": 5.9,
-    "humidity": 40.5,
-    "soil": 74,
-    "air_quality": 1908,
-    "latitude": "-23.466150",
-    "longitude": "-51.840200",
-    "url": "",
-    "timestamp": "2025-06-08T21:21:11.461Z"
-  },
-  {
-    "temperature": 5.9,
-    "humidity": 40.5,
-    "soil": 74,
-    "air_quality": 1666,
-    "latitude": "-23.466183",
-    "longitude": "-51.840217",
-    "url": "",
-    "timestamp": "2025-06-08T21:21:13.788Z"
-  },
-  {
-    "temperature": 5.9,
-    "humidity": 40.5,
-    "soil": 74,
-    "air_quality": 2367,
-    "latitude": "-23.466233",
-    "longitude": "-51.840233",
-    "url": "",
-    "timestamp": "2025-06-08T21:21:18.572Z"
-  },
-  {
-    "temperature": 5.9,
-    "humidity": 40.5,
-    "soil": 74,
-    "air_quality": 2217,
-    "latitude": "-23.466233",
-    "longitude": "-51.840233",
-    "url": "",
-    "timestamp": "2025-06-08T21:21:18.809Z"
-  },
-  {
-    "temperature": 5.9,
-    "humidity": 40.5,
-    "soil": 74,
-    "air_quality": 2123,
-    "latitude": "-23.466233",
-    "longitude": "-51.840233",
-    "url": "",
-    "timestamp": "2025-06-08T21:21:19.082Z"
-  },
-  {
-    "temperature": 5.9,
-    "humidity": 40.5,
-    "soil": 74,
-    "air_quality": 1737,
-    "latitude": "-23.466233",
-    "longitude": "-51.840233",
-    "url": "",
-    "timestamp": "2025-06-08T21:21:19.378Z"
-  },
-  {
-    "temperature": 5.9,
-    "humidity": 40.5,
-    "soil": 74,
-    "air_quality": 1708,
-    "latitude": "-23.466233",
-    "longitude": "-51.840233",
-    "url": "",
-    "timestamp": "2025-06-08T21:21:22.510Z"
-  },
-  {
-    "temperature": 5.9,
-    "humidity": 40.5,
-    "soil": 74,
-    "air_quality": 1935,
-    "latitude": "-23.466267",
-    "longitude": "-51.840250",
-    "url": "",
-    "timestamp": "2025-06-08T21:21:24.667Z"
-  },
-  {
-    "temperature": 5.9,
-    "humidity": 40.5,
-    "soil": 74,
-    "air_quality": 1759,
-    "latitude": "-23.466267",
-    "longitude": "-51.840250",
-    "url": "",
-    "timestamp": "2025-06-08T21:21:24.997Z"
+    "url": "https://exemplo.com/seca.jpg",
+    "timestamp": "2025-06-08T22:16:57.616Z"
   }
 ]
