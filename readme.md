@@ -4,6 +4,14 @@ Este projeto tem como objetivo o **monitoramento de variáveis ambientais** (tem
 
 ---
 
+## 👥 Integrantes
+
+| Nome Completo               | RM       |
+|-----------------------------|----------|
+| Pedro Henrique Lima Santos  | 558243   |
+| Vitor Gomes Martins         | 558244   |
+| Leonardo Pimentel Santos    | 557541   |
+
 ## 📸 Ilustração do circuito
 
 ![fluxo-geral](esp32/circuit.png)  
@@ -137,6 +145,21 @@ node-red
 ### 4. Ainda no node-RED, importe o arquivo JSON 
 ![clique aqui](nodered.json)
 
+> Imagem para auxílio de download
+
+![image](https://github.com/user-attachments/assets/d6e7e9bd-89d7-4e64-aad5-df100dc9d05a)
+
+
+### 4.1 Acesse o canto superior direito do node-RED
+![image](https://github.com/user-attachments/assets/92e0893e-71c1-4d14-a23b-12105250fcf8)
+
+### 4.2 Clique em "Importar"
+![image](https://github.com/user-attachments/assets/29cd744b-824d-49e4-be86-780e27794f3a)
+
+### 4.2 Selecione o arquivo JSON que você baixou (ou somente cole o arquivo no campo solicitado)
+![image](https://github.com/user-attachments/assets/095480b2-037f-4113-983b-25aabbd23a8f)
+
+
 ### 5. Acesse o sistema do ESP32 na plataforma wowki
 ```bash
 https://wokwi.com/projects/433090140394028033
@@ -144,23 +167,38 @@ https://wokwi.com/projects/433090140394028033
 ### 6. Execute o sistema do ESP32
 ![image](https://github.com/user-attachments/assets/bfff0a68-dfa1-452b-8aeb-a3d0dec4c10c)
 
-### 7. No terminal do vscode(ou a sua IDE), execute
+### 7. No terminal do vscode (ou a sua IDE), execute
 ```bash
-run.py
+python run.py
 ```
 
-### 8. Acesse o localhost(foi exibido no seu terminal) e veja o sistema funcionando
+### 8. Acesse o localhost (foi exibido no seu terminal) e veja o sistema funcionando
+> Exemplo de localhost - http://127.0.0.1:5000
 
 ### Imagens do sistema:
 > DashBoard de Logs do ESP32
 
 ![image](https://github.com/user-attachments/assets/00ce156c-0178-4ca2-bbd8-7b499cc14e9b)
 
-> Gráficos do sistema
+> Gráfico de temperatura
 
 ![image](https://github.com/user-attachments/assets/695d70f8-1c1f-4791-890d-26ea812184e0)
+
+> Gráfico de umidade
+
 ![image](https://github.com/user-attachments/assets/7fe4ad19-4adf-43f9-9e8b-423180baf020)
+
+> Gráfico de umidade do solo
+
 ![image](https://github.com/user-attachments/assets/1cd28be1-e856-4fb0-b415-9745ed539547)
+
+> Gráfico de qualidade do ar
+
 ![image](https://github.com/user-attachments/assets/b313c7df-6f1c-4d37-8212-597e17d3a218)
 
+> Histórico de logs com filtragem por data e exportação para csv
 
+![image](https://github.com/user-attachments/assets/cb740fce-cdc0-4632-ae7f-0124a73d2e60)
+
+
+© 2025 MontClio. Todos os direitos reservados.
