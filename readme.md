@@ -4,14 +4,6 @@ Este projeto tem como objetivo o **monitoramento de variáveis ambientais** (tem
 
 ---
 
-## 👥 Integrantes
-
-| Nome Completo               | RM       |
-|-----------------------------|----------|
-| Pedro Henrique Lima Santos  | 558243   |
-| Vitor Gomes Martins         | 558244   |
-| Leonardo Pimentel Santos    | 557541   |
-
 ## 📸 Ilustração do circuito
 
 ![fluxo-geral](esp32/circuit.png)  
@@ -202,3 +194,4 @@ python run.py
 
 
 © 2025 MontClio. Todos os direitos reservados.
+
